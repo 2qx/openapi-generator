@@ -13,7 +13,7 @@ class App {
       this.expressServer = new ExpressServer(this.config.URL_PORT, this.config.OPENAPI_YAML);
       // this.expressServer.app.use(swaggerRouter());
       await this.expressServer.launch();
-      logger.info('Express server running');
+      logger.info("Express server running");
     } catch (error) {
       logger.error(error);
       await this.close();

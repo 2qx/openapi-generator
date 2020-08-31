@@ -34,7 +34,7 @@ const {{{operationId}}} = ({{#allParams}}{{#-first}}{ {{/-first}}{{paramName}}{{
       }));
     } catch (e) {
       reject(Service.rejectResponse(
-        e.message || 'Invalid input',
+        e.message || "Invalid input",
         e.status || 405,
       ));
     }

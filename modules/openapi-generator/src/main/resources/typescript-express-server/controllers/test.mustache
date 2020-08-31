@@ -1,6 +1,6 @@
-const Service = require('../services/Service');
+const Service = require("../services/Service");
 
-const testItems = require('../tests/testFiles/testItems.json');
+const testItems = require("../tests/testFiles/testItems.json");
 
 class TestService {
   static testGetController() {
@@ -12,7 +12,7 @@ class TestService {
             200,
           ));
         } catch (e) {
-          const message = e.getMessage() || 'Could not get items. Server error';
+          const message = e.getMessage() || "Could not get items. Server error";
           reject(Service.rejectResponse(message, 500));
         }
       },
