@@ -110,7 +110,7 @@ The following generators are available:
 * [scala-play-server](scala-play-server.md)  
 * [scalatra](scalatra.md)  
 * [spring](spring.md)  
-
+* [typescript-express-server (beta)](typescript-express-server.md) 
 
 ## DOCUMENTATION generators
 * [asciidoc](asciidoc.md)  

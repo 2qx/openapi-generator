@@ -526,6 +526,10 @@
         "title": "Config Options for typescript-axios",
         "sidebar_label": "typescript-axios"
       },
+      "generators/typescript-express-server": {
+        "title": "Config Options for typescript-express-server",
+        "sidebar_label": "typescript-express-server"
+      },
       "generators/typescript-fetch": {
         "title": "Config Options for typescript-fetch",
         "sidebar_label": "typescript-fetch"
