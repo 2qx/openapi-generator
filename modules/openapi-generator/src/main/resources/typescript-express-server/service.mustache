@@ -24,7 +24,7 @@ import * as core from "express-serve-static-core";
 * returns {{{returnType}}}
 {{/returnType}}
 * */
-const {{{operationId}}} = ({{#allParams}}{{#-first}}{ {{/-first}}{{paramName}}{{#hasMore}}, {{/hasMore}}{{#-last}} }{{/-last}}{{/allParams}}) => new Promise(
+export const {{{operationId}}} = ({{#allParams}}{{#-first}}{ {{/-first}}{{paramName}}{{#hasMore}}, {{/hasMore}}{{#-last}} }{{/-last}}{{/allParams}}) => new Promise(
   async (resolve, reject) => {
     try {
       resolve(Service.successResponse({
@@ -42,11 +42,3 @@ const {{{operationId}}} = ({{#allParams}}{{#-first}}{ {{/-first}}{{paramName}}{{
 );
 {{/operation}}
 {{/operations}}
-
-module.exports = {
-  {{#operations}}
-  {{#operation}}
-  {{operationId}},
-  {{/operation}}
-  {{/operations}}
-};
