@@ -13,7 +13,7 @@
  */
 
 const Controller = require("./Controller");
-import * as service from "../services/{{{classname}}}Service";
+import { {{{classname}}}Service as service } from "../services";
 {{#operations}}
 {{#operation}}
 export const {{operationId}} = async (request: any, response: any) => {
